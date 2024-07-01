@@ -1,0 +1,5 @@
+# ignore everything ...
+*
+
+# ... except what is used by the build
+!entrypoint.sh

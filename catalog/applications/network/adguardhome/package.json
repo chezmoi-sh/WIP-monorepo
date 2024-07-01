@@ -1,0 +1,16 @@
+{
+    "name": "@catalog.chezmoi.sh/network~adguardhome",
+    "version": "0.107.50",
+    "private": true,
+    "description": "Network-wide ads & trackers blocking DNS server.",
+    "license": "Apache-2.0",
+    "author": "Alexandre Nicolaie <xunleii@users.noreply.github.com>",
+    "scripts": {
+        "dev": "VITEST_RUN_TYPE=integration:docker vitest --ui --coverage .",
+        "test": "VITEST_RUN_TYPE=integration:docker vitest run .",
+        "test:coverage": "VITEST_RUN_TYPE=integration:docker vitest run --coverage ."
+    },
+    "devDependencies": {
+        "get-port-please": "^3.1.2"
+    }
+}

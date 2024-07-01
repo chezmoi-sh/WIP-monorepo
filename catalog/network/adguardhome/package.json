@@ -1,8 +1,0 @@
-{
-    "name": "@catalog/network-adguardhome",
-    "version": "0.107.50",
-    "description": "Network-wide ads & trackers blocking DNS server.",
-    "author": "Alexandre Nicolaie <xunleii@users.noreply.github.com>",
-    "license": "Apache-2.0",
-    "private": true
-}
