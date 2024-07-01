@@ -21,6 +21,7 @@
 # the runtime image.
 ARG ALPN_BASE
 
+
 # ┌───────────────────────────────────────────────────────────────────────────┐
 # │ <runtime>: create the Authelia runtime image using all previous stages    │
 # └───────────────────────────────────────────────────────────────────────────┘

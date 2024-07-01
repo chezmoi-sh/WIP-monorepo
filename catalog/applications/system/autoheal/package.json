@@ -1,0 +1,14 @@
+{
+    "name": "@catalog.chezmoi.sh/system~autoheal",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Autoheal is a container that will monitor the health of other containers and restart them if they are unhealthy.",
+    "repository": "https://raw.githubusercontent.com/willfarrell/docker-autoheal",
+    "license": "Apache-2.0",
+    "author": "Alexandre Nicolaie <xunleii@users.noreply.github.com>",
+    "scripts": {
+        "dev": "VITEST_RUN_TYPE=integration:docker vitest --ui --coverage .",
+        "test": "VITEST_RUN_TYPE=integration:docker vitest run .",
+        "test:coverage": "VITEST_RUN_TYPE=integration:docker vitest run --coverage ."
+    }
+}

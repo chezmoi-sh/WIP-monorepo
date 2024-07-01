@@ -1,9 +1,0 @@
-{
-    "name": "@catalog/security-authelia",
-    "version": "0.0.0",
-    "description": "Autoheal is a container that will monitor the health of other containers and restart them if they are unhealthy.",
-    "repository": "https://raw.githubusercontent.com/willfarrell/docker-autoheal",
-    "author": "Alexandre Nicolaie <xunleii@users.noreply.github.com>",
-    "license": "Apache-2.0",
-    "private": true
-}
