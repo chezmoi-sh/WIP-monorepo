@@ -20,11 +20,6 @@ import { SecretAsset } from "@chezmoi.sh/core/utils";
 
 type Asset = FileAsset | RemoteAsset | StringAsset | SecretAsset<FileAsset | RemoteAsset | StringAsset>;
 
-/**
- * Configuration settings for the Homepage application.
- * This allows you to specify various assets and configurations that will be used
- * to customize the Homepage instance.
- */
 export interface HomepageConfiguration {
     /**
      * Optional public Homepage assets (image, sound, etc.) to include in the Homepage image.

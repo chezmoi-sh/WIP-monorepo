@@ -21,6 +21,9 @@ describe.runIf(isIntegration)("(Miscellaneous/Startpage) Homepage", () => {
         describe("when it is deployed", { timeout }, () => {
             // -- Prepare Pulumi execution --
             const program = async () => {
+                const ports = {
+                    http: await getRandomPort(),
+                };
                 const homepage = new Homepage(randomUUID(), {
                     public: new DirectoryAsset(`${__dirname}/fixtures/assets`).assets.reduce(
                         (acc, asset) => ({ ...acc, [asset.destination]: asset.source }),
@@ -37,13 +40,7 @@ describe.runIf(isIntegration)("(Miscellaneous/Startpage) Homepage", () => {
 
                     imageArgs: { push: true, tags: [HomepageImageTag] },
                     containerArgs: {
-                        ports: [
-                            {
-                                internal: 3000,
-                                external: await getRandomPort(),
-                                protocol: "tcp",
-                            },
-                        ],
+                        ports: [{ internal: 3000, external: ports.http, protocol: "tcp" }],
                         wait: true,
                     },
                 });
