@@ -1,4 +1,5 @@
 # ignore everything but what we need
 *
 **/*
-!Dockerfile
+
+# ... except what is used by the build

@@ -19,6 +19,7 @@
 # the runtime image.
 ARG ALPN_BASE
 
+
 # ┌───────────────────────────────────────────────────────────────────────────┐
 # │ <builder>: build the yaLDAP binary (Go)                                   │
 # └───────────────────────────────────────────────────────────────────────────┘
@@ -76,9 +77,9 @@ HEALTHCHECK --interval=5s CMD nc -z localhost 389 || exit 1
 LABEL \
     org.opencontainers.image.authors="chezmoi.sh <xunleii@users.noreply.github.com>" \
     org.opencontainers.image.created="1970-01-01 00:00:00.000000000Z" \
-    org.opencontainers.image.description="Your identity, your rules." \
-    org.opencontainers.image.documentation="https://github.com/xunleii/yaldap" \
-    org.opencontainers.image.licenses="AGPL-3.0" \
+    org.opencontainers.image.description="yaLDAP is an easy-to-use LDAP server using YAML file as directory definition." \
+    org.opencontainers.image.documentation="https://github.com/chezmoi-sh/yaldap" \
+    org.opencontainers.image.licenses="Apache-2.0" \
     org.opencontainers.image.revision="" \
     org.opencontainers.image.source="" \
     org.opencontainers.image.title="yaldap" \

@@ -1,9 +1,0 @@
-{
-    "name": "@catalog/security-yaldap",
-    "version": "0.0.0",
-    "description": "yaLDAP is an easy-to-use LDAP server using YAML file as directory definition.",
-    "repository": "https://github.com/chezmoi-sh/yaldap",
-    "author": "Alexandre Nicolaie <xunleii@users.noreply.github.com>",
-    "license": "Apache-2.0",
-    "private": true
-}
